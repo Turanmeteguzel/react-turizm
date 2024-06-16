@@ -1,25 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import JojoYurt from "./pages/JojoYurt";
+import Anasayfa from "./routes/Anasayfa";
+import Kurumsal from "./routes/Kurumsal";
+import JojoYazOkulu from "./routes/JojoYazOkulu";
+import Tatil from "./routes/Tatil";
+import JojoEgitim from "./routes/JojoEgitim";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Vize from "./routes/Vize";
+import Hakkimizda from "./routes/Hakkimizda";
+import Organizasyonlar from "./routes/Organizasyonlar";
+import { AnimatePresence } from "framer-motion";
+import YurticiOrg from "./routes/YurticiOrg";
+import YurtdisiOrg from "./routes/YurtdisiOrg";
+import Istanbul from "./routes/Istanbul";
+import YurticiTurlar from "./routes/YurticiTurlar";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <AnimatePresence mode="wait">
+        <Routes>
+          <Route exact path="/" Component={Anasayfa} />
+          <Route path="/vize" Component={Vize} />
+          <Route path="/kurumsal" Component={Kurumsal} />
+          <Route path="/kamp" Component={Tatil} />
+          <Route path="/hakkimizda" Component={Hakkimizda} />
+          <Route path="/yurtdisi" Component={JojoYurt} />
+          <Route path="/yazokulu" Component={JojoYazOkulu} />
+          <Route path="/egitim" Component={JojoEgitim} />
+          <Route path="/organizasyonlar" Component={Organizasyonlar} />
+          <Route path="/yurticiorganizasyonlar" Component={YurticiOrg} />
+          <Route path="/yurtdisiorganizasyonlar" Component={YurtdisiOrg} />
+          <Route path="/istanbulsehirgezileri" Component={Istanbul} />
+          <Route path="/yurticiturlaricerik" Component={YurticiTurlar} />
+        </Routes>
+      </AnimatePresence>
+    </Router>
   );
-}
+};
 
 export default App;
