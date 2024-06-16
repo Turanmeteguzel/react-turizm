@@ -26,7 +26,7 @@ const ClipPathLinks = () => {
           Icon={SiInstagram}
           href="https://www.instagram.com/jojotatil/"
         />
-        <LinkBox Icon={SiWhatsapp} href="#" />
+        <LinkBox Icon={SiWhatsapp} href="https://wa.me/+9005011417690" />
       </div>
       <div className="grid grid-cols-2 divide-x divide-neutral-900">
         <LinkBox Icon={SiGmail} href="mailto:jojotatil@gmail.com" />

@@ -140,7 +140,7 @@ const testimonials = {
     {
       id: 1,
       img: "kisiler/rayyu.jpg",
-      name: "Rayyu Cebenli",
+      name: "Ayyüce Benli",
       title: "Satış Danışmanı",
       info: "Deneyimimizle Hizmetinizdeyiz, Sizin İçin En İyisini Sunuyoruz!",
       wp: "https://wa.me/+9005064697540",

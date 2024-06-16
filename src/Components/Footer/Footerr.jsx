@@ -5,7 +5,7 @@ const Footerr = () => {
   return (
     <>
       {/* Footer container */}
-      <footer className="bg-neutral-900 text-center text-surface/75  dark:text-white/75 lg:text-left">
+      <footer className="bg-neutral-900 text-center text-surface/75 text-2xl md:text-xl  text-white lg:text-left">
         <div className="flex items-center justify-center border-b-2 border-neutral-900 p-6 dark:border-white/10 lg:justify-between">
           <div className="me-12 hidden lg:block">
             <span>Sosyal Medya Ağlarımız:</span>

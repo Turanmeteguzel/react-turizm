@@ -47,18 +47,18 @@ const Map = () => {
                         Pazartesi - Cumartesi : 08:00 - 17:00
                       </p>
                     </div>
-                    <div className="flex m-10 gap-12 w-40 h-24">
+                    <div className="grid grid-cols-3 m-10 gap-3 h-20 sm:columns-3">
+                      <a
+                        href="https://www.tursab.org.tr/tr/ddsv"
+                        className="bg-slate-100 p-5 font-extrabold text-center items-center rounded-lg text-black "
+                      >
+                        Dijital Doğrulama Sistemini Aç
+                      </a>
                       <img
                         src="https://www.vikingturizm.com.tr/Content/images/logos/iata.png"
                         alt=""
                       />
-                      <img src="./images/digital.jpeg" alt="" />
-                      <a
-                        href="https://www.tursab.org.tr/tr/ddsv"
-                        className="bg-slate-100 p-5 font-bold text-center rounded-lg text-blue-300 "
-                      >
-                        Dijital Belgeyi Gör
-                      </a>
+                      <img src="./images/digital.jpeg" alt="digitalbelge" />
                     </div>
                   </div>
                 </div>
